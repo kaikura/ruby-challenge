@@ -1,0 +1,64 @@
+{
+  "availabilities": [
+    {
+      "project_id": 1,
+      "assigned_developers": [
+        {
+          "developer_id": 1,
+          "assigned_effort": 249
+        },
+        {
+          "developer_id": 2,
+          "assigned_effort": 1
+        }
+      ],
+      "total_days": 365,
+      "workdays": 250,
+      "weekend_days": 105,
+      "holidays": 10,
+      "devworkdays": 747,
+      "effort_days": 250,
+      "feasibility": true
+    },
+    {
+      "project_id": 2,
+      "assigned_developers": [
+        {
+          "developer_id": 1,
+          "assigned_effort": 51
+        },
+        {
+          "developer_id": 2,
+          "assigned_effort": 50
+        },
+        {
+          "developer_id": 3,
+          "assigned_effort": 49
+        }
+      ],
+      "total_days": 76,
+      "workdays": 51,
+      "weekend_days": 22,
+      "holidays": 3,
+      "devworkdays": 151,
+      "effort_days": 150,
+      "feasibility": true
+    },
+    {
+      "project_id": 3,
+      "assigned_developers": [
+        {
+          "developer_id": 1,
+          "assigned_effort": 10
+        }
+      ],
+      "total_days": 15,
+      "workdays": 11,
+      "weekend_days": 4,
+      "holidays": 0,
+      "devworkdays": 32,
+      "effort_days": 10,
+      "feasibility": true
+    }
+  ]
+}

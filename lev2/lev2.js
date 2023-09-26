@@ -40,8 +40,6 @@ data.developers.forEach(developer => {
       const isLocalHoliday = data.local_holidays.some(h => h.day === dayStr);
       const isBirthday = dayStr.slice(5) === developer.birthday.slice(5);
       
-
-
       if (day.getDay() === 0 || day.getDay() === 6) {
         weekendDays++;
       } else if (isNationalHoliday || isBirthday || isLocalHoliday) {

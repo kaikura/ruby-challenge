@@ -56,4 +56,3 @@ data.periods.map(period => {
 // Write output.json
 const output = { availabilities };
 fs.writeFileSync(path.resolve(__dirname, 'output.json'), JSON.stringify(output, null, 2), 'utf8');
-
