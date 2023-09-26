@@ -48,6 +48,21 @@ data.developers.forEach(developer => {
         holidayDays++;
       } else {
         workdays++;
+  }
+}
+
+  data.developers.forEach(developer => {
+    for (let day = new Date(since); day <= until; day.setDate(day.getDate() + 1)) {
+      const dayStr = day.toISOString().split('T')[0];
+      const isNationalHoliday = nationalHolidays.includes(dayStr);
+      const isLocalHoliday = data.local_holidays.some(h => h.day === dayStr);
+      const isBirthday = dayStr.slice(5) === developer.birthday.slice(5);
+      console.log("im i doing this added");
+      if (day.getDay() === 0 || day.getDay() === 6) {
+      } else if (isNationalHoliday || isBirthday || isLocalHoliday) {
+      } else {
+        devworkdays++;
+        console.log("workday added");
       }
     }
 
